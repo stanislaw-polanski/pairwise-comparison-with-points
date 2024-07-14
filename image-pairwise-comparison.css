@@ -17,11 +17,6 @@ img {
   transition: opacity 0.5s, transform 0.5s;
 }
 
-#compared-images:hover .compared-image img {
-  opacity: 0.5;
-  transform: scale(0.8);
-}
-
 #compared-images:hover .compared-image:hover img {
   opacity: 1;
   transform: none;
