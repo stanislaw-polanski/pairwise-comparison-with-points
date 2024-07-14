@@ -17,7 +17,7 @@
     <div class="navbar-menu is-active">
       <div class="navbar-start">
         <a class="navbar-item" href="https://evgeniy-khist.github.io/">
-          evgeniy-khist.github.io
+          evgeniy-khist.github.io / comparison with points
         </a>
         <a class="navbar-item" href="pairwise-comparison.html">
           Pairwise Comparison
@@ -68,6 +68,28 @@
 
       <div v-if="nextNotVotedPair != null">
         <p class="title is-3 has-text-centered">Compare images</p>
+        <div class="is-centered">
+          <div class="notification">
+            <p>Click on the image = 3 points.</p>
+          </div>
+          <div class="box columns is-centered">
+            <a @click="nextNotVotedPair.voteForItem1()" class="button">
+              3
+            </a>
+            <a @click="nextNotVotedPair.voteForItem1WithPoints(1)" class="button">
+              1
+            </a>
+            <a @click="nextNotVotedPair.voteForDraw()" class="button">
+              DRAW
+            </a>
+            <a @click="nextNotVotedPair.voteForItem2WithPoints(1)" class="button">
+              1
+            </a>
+            <a @click="nextNotVotedPair.voteForItem2()" class="button">
+              3
+            </a>
+          </div>
+        </div>
         <div id="compared-images" class="columns is-vcentered">
           <div class="column compared-image">
             <a @click="nextNotVotedPair.voteForItem1()">
@@ -90,6 +112,7 @@
               <th>Filename</th>
               <th>Rank</th>
               <th>Score</th>
+              <th>Second grade score</th>
             </tr>
           </thead>
           <tbody>
@@ -100,6 +123,7 @@
               <td>{{ item.value.filename }}</td>
               <td>{{ index + 1 }}</td>
               <td>{{ item.score }}</td>
+              <td>{{ item.secondGradeScore }}</td>
             </tr>
           </tbody>
         </table>

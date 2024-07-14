@@ -15,7 +15,7 @@ const app = new Vue({
   },
   computed: {
     sortedItems: function () {
-      return Array.from(this.items).sort((a, b) => b.score - a.score);
+      return Array.from(this.items).sort((a, b) => b.score - a.score || b.secondGradeScore - a.secondGradeScore);
     },
     notVotedPairs: function () {
       return this.pairs.filter(pair => !pair.voted);
