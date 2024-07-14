@@ -42,7 +42,7 @@ The pairwise comparison method can be implemented as an interactive web applicat
 
 ## Image pairwise comparison
 
-The pairwise comparison method can also be used for choosing the best image or photo.
+The pairwise comparison method can also be used for choosing the best image or photo. This is modified - a bar with draw and second grade points is added.
 
 [https://evgeniy-khist.github.io/pairwise-comparison/image-pairwise-comparison.html](https://evgeniy-khist.github.io/pairwise-comparison/image-pairwise-comparison.html)
 
