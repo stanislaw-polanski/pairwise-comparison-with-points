@@ -29,7 +29,6 @@ class Pair {
       item.secondGradeScore = item.secondGradeScore + secondGradeScore;
       this.winner = item;
     }
-    console.log(item)
   }
 
   voteForDraw() {
